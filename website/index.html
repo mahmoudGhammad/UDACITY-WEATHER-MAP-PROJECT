@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Weather Journal</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+ <body>
+<div id = "app">
+  <div id="hoch">
+    <div class ="holder headline"  >
+      <h1>Weather Journal App</h1>
+      
+    </div>
+    <div class ="holder"   >
+      <div>
+  
+        <label for="zip">Enter Zipcode here</label>
+        <input type="text" id="zip" placeholder="enter zip code here" value="">
+  
+      </div>
+      
+    </div>
+    <div class="holder">
+      <label for="units" style="font-size: 1.3vw;">Please type  metric or imperial or us to change unit  </label>
+      <input  id="units" type="text" placeholder="change your unit here">
+    </div>
+
+    <div class ="holder feeling ">
+      <div>
+        <label for="feelings">How are you feeling today?</label>
+      </div>
+      <div>
+        <textarea class= "myInput" id="feelings" placeholder="Enter your feelings here" rows="9" cols="50"></textarea>
+      </div>
+      <div>
+        <button id="generate" type = "submit"> Generate </button>
+      </div>
+      
+     
+      
+    </div>
+
+
+    <div class ="holder">
+
+
+      <div class = "title" style="font-size: larger; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: black; padding: 2vw;margin: 2vw;">Most Recent Entry</div>
+
+     <div id = "entryHolder">
+
+      <div id = "" style="font-size: larger; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: black; padding: 1vw;margin: 1vw;">Today's date: </div>
+      <div id = "date"></div> 
+      <div id = "" style="font-size: larger; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: black; padding: 1vw;margin: 1vw;" >Temperature right now  is: </div>
+      <div id = "temp"></div>
+      <div id =""style="font-size: larger; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: black; padding: 1vw;margin: 1vw;" >You can find your response below: </div>
+
+      <div id = "content"></div>
+
+    </div>
+
+    </div>
+
+  </div>
+  
+  </div>
+<script src="app.js" type="text/javascript"></script>
+
+</body>
+</html>
